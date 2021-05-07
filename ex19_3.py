@@ -1,5 +1,4 @@
 class StringVar:
-    name = ''
 
     def __init__(self, name):
         self.name = name
@@ -8,13 +7,12 @@ class StringVar:
         self.name = new
 
     def get(self):
-        return self.name
-        # print(self.name)
+        print(self.name)
 
 
-StringVar('None')
+st = StringVar('None')
 
-StringVar.set('Hi', 'There')
-StringVar.get()
-StringVar.set('Hello')
-StringVar.get()
+st.set('Hi')
+st.get()
+st.set('Hello')
+st.get()
